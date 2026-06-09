@@ -183,9 +183,12 @@ function App() {
             </h3>
 
             <p className="mb-6 text-stone-600">
-              Weather application built with React that provides current weather,
-              hourly trends, 7-day forecasts and map visualization using external APIs.
-              The project focuses on API integration, data visualization and user experience.
+              <p className="mb-6 text-stone-600">
+                Webová aplikácia vytvorená v Reacte na zobrazovanie aktuálneho počasia,
+                hodinových trendov a 7-dňovej predpovede. Aplikácia využíva externé
+                meteorologické API, interaktívnu mapu a grafické vizualizácie údajov
+                s dôrazom na prehľadnosť a používateľský komfort.
+              </p>
             </p>
 
             <div className="mb-6 flex flex-wrap gap-3">
@@ -198,11 +201,11 @@ function App() {
               </span>
 
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
-                Leaflet
+                 Leaflet
               </span>
 
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
-                Charts
+                Charts.js
               </span>
             </div>
 
