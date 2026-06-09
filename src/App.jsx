@@ -82,15 +82,17 @@ function App() {
       >
         <div className="max-w-4xl text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-stone-500">
-            Aspiring Full-Stack Developer
+            SQL • Data Analytics • React
           </p>
 
           <h1 className="mb-6 text-6xl font-bold md:text-8xl">
-            KRBL
+            Adam Korbel
           </h1>
 
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-stone-600">
-            I focus on learning by building real projects.
+          <p className="mx-auto mb-10 max-w-3xl text-lg leading-relaxed text-stone-600">
+            Aspiring developer focused on SQL, databases and data analytics.
+            I build practical projects using PostgreSQL, Python and React while
+            continuously expanding my skills through hands-on experience.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -118,10 +120,14 @@ function App() {
         <h2 className="mb-8 text-4xl font-bold">O mne</h2>
 
         <p className="max-w-3xl text-lg leading-relaxed text-stone-600">
-          Som samouk vo vývoji webových aplikácií, ktorý sa venuje programovaniu vo voľnom čase.
-          Zameriavam sa na React a moderné webové technológie, pričom v poslednom období sa viac sústredím na SQL a prácu s databázami.
-          Zaujíma ma návrh dátových štruktúr, optimalizácia a spôsob, akým aplikácie pracujú s informáciami na pozadí.
-          Rád staviam praktické projekty – od jednoduchých nástrojov až po AI aplikácie – a svoje schopnosti si neustále rozvíjam cez reálnu prax.
+          Som samouk vo vývoji softvéru a dátovej analytike. Aktuálne sa
+          zameriavam predovšetkým na SQL, relačné databázy a analýzu dát,
+          pričom svoje znalosti rozširujem prostredníctvom vlastných projektov.
+
+          Popri práci s databázami využívam Python na spracovanie dát a React
+          na tvorbu moderných webových aplikácií. Mojím cieľom je budovať
+          praktické riešenia, ktoré kombinujú kvalitné dáta, analytiku a
+          používateľsky prívetivé rozhrania.
         </p>
       </section>
 
@@ -131,7 +137,45 @@ function App() {
 
         <div className="grid gap-6 md:grid-cols-2">
 
-          {/* WDA PROJECT */}
+          <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
+            <h3 className="mb-3 text-2xl font-semibold">
+              SQL Retail Sales Analytics
+            </h3>
+
+            <p className="mb-6 text-stone-600">
+              SQL Retail Sales Analytics je analytický projekt zameraný na
+              spracovanie a analýzu maloobchodných predajov pomocou PostgreSQL.
+              Projekt rieši reálne obchodné otázky, ako sú vývoj tržieb,
+              výkonnosť produktov, správanie zákazníkov a analýza kategórií.
+              Súčasťou projektu sú SQL analýzy, KPI metriky a príprava dát pre
+              reporting a dashboardy v Power BI.
+            </p>
+
+            <div className="flex gap-3">
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                SQL
+              </span>
+
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                Power BI
+              </span>
+
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                Analytics
+              </span>
+            </div>
+
+            <a
+              href="https://github.com/adamkrbl/sql-retail-sales-analytics"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-block rounded-full bg-black px-5 py-2 text-white transition hover:opacity-90"
+            >
+              Zobraziť projekt
+            </a>
+          </div>
+          
+          {/* ostatné projekty */}
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-semibold">
               WDA – Weather Data App
@@ -142,22 +186,28 @@ function App() {
               Pracuje s externým API a zameriava sa na jednoduchosť a rýchlosť.
             </p>
 
+            <div className="flex gap-3">
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                React
+              </span>
+
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                API
+              </span>
+
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                Weather Data
+              </span>
+            </div>
+
             <a
               href="https://weather-data-analytics-wda.onrender.com/"
               target="_blank"
               rel="noreferrer"
-              className="inline-block rounded-full bg-black px-5 py-2 text-white transition hover:opacity-90"
+              className="mt-6 inline-block rounded-full bg-black px-5 py-2 text-white transition hover:opacity-90"
             >
               Otvoriť projekt
             </a>
-          </div>
-
-          {/* ostatné projekty */}
-          <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
-            <h3 className="mb-3 text-2xl font-semibold">AI Assistant</h3>
-            <p className="text-stone-600">
-              Inteligentný asistent využívajúci moderné LLM modely.
-            </p>
           </div>
 
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
@@ -183,14 +233,17 @@ function App() {
 
         <div className="flex flex-wrap gap-4">
           {[
-            "SQL",
-            "React",
-            "JavaScript",
-            "Node.js",
-            "PostgreSQL",
-            "OpenAI",
-            "Python",
-            "Git",
+            [
+              "SQL",
+              "PostgreSQL",
+              "Power BI",
+              "Python",
+              "Data Analytics",
+              "React",
+              "JavaScript",
+              "Node.js",
+              "Git",
+            ]
           ].map((skill) => (
             <span
               key={skill}
