@@ -277,17 +277,15 @@ function App() {
 
         <div className="flex flex-wrap gap-4">
           {[
-            [
-              "SQL",
-              "PostgreSQL",
-              "Power BI",
-              "Python",
-              "Data Analytics",
-              "React",
-              "JavaScript",
-              "Node.js",
-              "Git",
-            ]
+            "SQL",
+            "PostgreSQL",
+            "Power BI",
+            "Python",
+            "Data Analytics",
+            "React",
+            "JavaScript",
+            "Node.js",
+            "Git",
           ].map((skill) => (
             <span
               key={skill}
