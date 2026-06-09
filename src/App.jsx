@@ -135,8 +135,9 @@ function App() {
       <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
         <h2 className="mb-12 text-4xl font-bold">Projekty</h2>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="space-y-8">
 
+          {/* SQL */}
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-semibold">
               SQL Retail Sales Analytics
@@ -175,39 +176,82 @@ function App() {
             </a>
           </div>
           
-          {/* ostatné projekty */}
+          {/* WDA */}
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
             <h3 className="mb-3 text-2xl font-semibold">
               WDA – Weather Data App
             </h3>
 
             <p className="mb-6 text-stone-600">
-              Webová aplikácia na zobrazovanie aktuálneho počasia podľa mesta.
-              Pracuje s externým API a zameriava sa na jednoduchosť a rýchlosť.
+              Weather application built with React that provides current weather,
+              hourly trends, 7-day forecasts and map visualization using external APIs.
+              The project focuses on API integration, data visualization and user experience.
             </p>
 
-            <div className="flex gap-3">
+            <div className="mb-6 flex flex-wrap gap-3">
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
                 React
               </span>
 
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
-                API
+                REST API
               </span>
 
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
-                Weather Data
+                Leaflet
+              </span>
+
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                Charts
               </span>
             </div>
 
-            <a
-              href="https://weather-data-analytics-wda.onrender.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-block rounded-full bg-black px-5 py-2 text-white transition hover:opacity-90"
-            >
-              Otvoriť projekt
-            </a>
+            {/* Screenshots */}
+            <div className="mb-6 grid gap-4 md:grid-cols-2">
+              <img
+                src="/images/wda1.png"
+                alt="WDA Search"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+
+              <img
+                src="/images/wda2.png"
+                alt="WDA Chart"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+
+              <img
+                src="/images/wda3.png"
+                alt="WDA Forecast"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+
+              <img
+                src="/images/wda4.png"
+                alt="WDA Map"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://weather-data-analytics-wda.onrender.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full bg-black px-5 py-2 text-white transition hover:opacity-90"
+              >
+                Live Demo
+              </a>
+
+              <a
+                href="https://github.com/adamkrbl"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-black px-5 py-2 transition hover:bg-black hover:text-white"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
 
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
