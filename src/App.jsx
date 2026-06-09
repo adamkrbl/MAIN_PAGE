@@ -209,25 +209,25 @@ function App() {
             {/* Screenshots */}
             <div className="mb-6 grid gap-4 md:grid-cols-2">
               <img
-                src="/images/wda1.png"
+                src="/images/wda1.PNG"
                 alt="WDA Search"
                 className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
               />
 
               <img
-                src="/images/wda2.png"
+                src="/images/wda2.PNG"
                 alt="WDA Chart"
                 className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
               />
 
               <img
-                src="/images/wda3.png"
+                src="/images/wda3.PNG"
                 alt="WDA Forecast"
                 className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
               />
 
               <img
-                src="/images/wda4.png"
+                src="/images/wda4.PNG"
                 alt="WDA Map"
                 className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
               />
