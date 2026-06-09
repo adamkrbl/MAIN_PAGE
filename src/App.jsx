@@ -1,18 +1,78 @@
+import { useState } from "react";
+
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#F5F1EA] text-black">
       <nav className="sticky top-0 z-50 border-b border-stone-200 bg-[#F5F1EA]/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <h1 className="font-semibold">MyPage</h1>
 
-          <div className="flex gap-6 text-sm">
+          {/* Desktop menu */}
+          <div className="hidden md:flex gap-6 text-sm">
             <a href="#home" className="hover:opacity-60">Domov</a>
             <a href="#about" className="hover:opacity-60">O mne</a>
             <a href="#projects" className="hover:opacity-60">Projekty</a>
             <a href="#skills" className="hover:opacity-60">Skilly</a>
             <a href="#contact" className="hover:opacity-60">Kontakt</a>
           </div>
+
+          {/* Mobile hamburger */}
+          <button
+            className="md:hidden text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
         </div>
+
+        {/* Mobile menu */}
+        {menuOpen && (
+          <div className="md:hidden border-t border-stone-200 bg-[#F5F1EA]">
+            <div className="flex flex-col px-6 py-4">
+              <a
+                href="#home"
+                className="py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Domov
+              </a>
+
+              <a
+                href="#about"
+                className="py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                O mne
+              </a>
+
+              <a
+                href="#projects"
+                className="py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Projekty
+              </a>
+
+              <a
+                href="#skills"
+                className="py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Skilly
+              </a>
+
+              <a
+                href="#contact"
+                className="py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Kontakt
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* HERO */}
