@@ -144,15 +144,27 @@ function App() {
             </h3>
 
             <p className="mb-6 text-stone-600">
-              SQL Retail Sales Analytics je analytický projekt zameraný na
-              spracovanie a analýzu maloobchodných predajov pomocou PostgreSQL.
-              Projekt rieši reálne obchodné otázky, ako sú vývoj tržieb,
-              výkonnosť produktov, správanie zákazníkov a analýza kategórií.
-              Súčasťou projektu sú SQL analýzy, KPI metriky a príprava dát pre
-              reporting a dashboardy v Power BI.
+              SQL Retail Sales Analytics je dátový analytický projekt zameraný na
+              spracovanie a analýzu maloobchodných predajov pomocou PostgreSQL a SQL.
+              Projekt obsahuje tvorbu analytických dotazov, prípravu dát a výpočet
+              kľúčových obchodných metrík ako tržby, priemerná hodnota objednávky,
+              celoživotná hodnota zákazníkov a výkonnosť produktov.
+
+              Súčasťou projektu je Power BI dashboard vytvorený pre vizualizáciu
+              výsledkov analýzy. Dashboard poskytuje prehľad vývoja tržieb,
+              zákazníckeho správania, produktovej výkonnosti a kategóriových trendov
+              pomocou KPI metrík a interaktívnych grafov.
+
+              Cieľom projektu bolo vytvoriť analytické riešenie, ktoré premieňa
+              predajné dáta na použiteľné obchodné informácie pre reporting
+              a rozhodovanie.
             </p>
 
-            <div className="flex gap-3">
+            <div className="mb-6 flex flex-wrap gap-3">
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                PostgreSQL
+              </span>
+
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
                 SQL
               </span>
@@ -162,9 +174,37 @@ function App() {
               </span>
 
               <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
-                Analytics
+                Data Analytics
+              </span>
+
+              <span className="rounded-full border border-stone-300 px-3 py-1 text-sm">
+                Dashboard Design
               </span>
             </div>
+
+            {/* Screenshots */}
+            <div className="mb-6 grid gap-4 md:grid-cols-2">
+
+              <img
+                src="/images/revenue_overview.PNG"
+                alt="Revenue Overview"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+
+              <img
+                src="/images/customer_analysis.PNG"
+                alt="Customer Analysis"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+
+              <img
+                src="/images/product_analysis.PNG"
+                alt="Product Analysis"
+                className="rounded-2xl border border-stone-200 transition hover:scale-[1.02]"
+              />
+
+            </div>
+
 
             <a
               href="https://github.com/adamkrbl/sql-retail-sales-analytics"
