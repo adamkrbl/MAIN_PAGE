@@ -120,14 +120,17 @@ function App() {
         <h2 className="mb-8 text-4xl font-bold">O mne</h2>
 
         <p className="max-w-3xl text-lg leading-relaxed text-stone-600">
-          Som samouk vo vývoji softvéru a dátovej analytike. Aktuálne sa
-          zameriavam predovšetkým na SQL, relačné databázy a analýzu dát,
-          pričom svoje znalosti rozširujem prostredníctvom vlastných projektov.
+          Som vývojár so záujmom o dátovú analytiku, databázy a tvorbu praktických
+          softvérových riešení.
 
-          Popri práci s databázami využívam Python na spracovanie dát a React
-          na tvorbu moderných webových aplikácií. Mojím cieľom je budovať
-          praktické riešenia, ktoré kombinujú kvalitné dáta, analytiku a
-          používateľsky prívetivé rozhrania.
+          Aktuálne sa najviac zameriavam na SQL, relačné databázy a analýzu dát.
+          Venujem sa návrhu databáz, tvorbe analytických dotazov a transformácii dát
+          na užitočné informácie pomocou reportov a vizualizácií.
+
+          Popri dátovej oblasti využívam Python na spracovanie dát a React na tvorbu
+          moderných webových aplikácií. Svoje znalosti rozvíjam prostredníctvom
+          vlastných projektov, kde prepájam databázy, analytiku a používateľské
+          rozhrania.
         </p>
       </section>
 
